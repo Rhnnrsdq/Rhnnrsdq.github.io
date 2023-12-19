@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html translate="no">
+  <head>
+    <title>Welcome to Freelancore</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body onload="loadingFunc()">
+    <!--------------Preloader--------------------------->
+    <div id="mengloding">
+      <div class="logoback">
+        <img class="animates" src="assets/image/logoo.png" alt="Freelancore" />
+      </div>
+    </div>
+    <!--------------Preloader--------------------------->
+    <div id="kontener">
+      <div class="bagianatas1">
+        <div class="daleman_nav">
+          <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+              <a
+                class="navbar-brand"
+                href="#"
+                data-aos="fade-right"
+                data-aos-delay="2300"
+                data-aos-once="true"
+              >
+                <img src="assets/image/logoo.png" />
+              </a>
+              <button
+                class="menu"
+                id="menue"
+                onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'));toggleMenu()"
+                aria-label="Main Menu"
+                style="visibility: hidden"
+                data-aos="fade-down"
+                data-aos-delay="2300"
+                data-aos-once="true"
+              >
+                <svg
+                  width="70"
+                  height="70"
+                  viewBox="0 0 100 100"
+                  style="padding: 0 0 20px 0"
+                >
+                  <path
+                    class="line line1"
+                    d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
+                  />
+                  <path class="line line2" d="M 20,50 H 80" />
+                  <path
+                    class="line line3"
+                    d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
+                  />
+                </svg>
+              </button>
+              <div
+                class="collapse navbar-collapse"
+                data-aos="fade-down"
+                data-aos-delay="2300"
+                data-aos-once="true"
+              >
+                <!-- ml-auto still works just fine-->
+                <div class="navbar-nav ms-auto">
+                  <a class="nav-link active" aria-current="page" href="/"
+                    >Home</a
+                  >
+                  <a class="nav-link" href="#about">About</a>
+                  <a class="nav-link" href="#review">Review</a>
+                  <a class="nav-link" href="#contact">Contact</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <header>
+          <ul class="menu-utama2">
+            <img src="assets/image/logoo.png" id="logonav" />
+            <li><a href="/" id="links">Home</a></li>
+            <li><a href="#" id="links">About</a></li>
+            <li><a href="#" id="links">Review</a></li>
+            <li><a href="#" id="links">Contact</a></li>
+          </ul>
+        </header>
+        <div class="konten">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-6 kiri text-left mt-md-4">
+                <h3
+                  data-aos="fade-right"
+                  data-aos-delay="2500"
+                  data-aos-once="true"
+                >
+                  Halo, Selamat Datang
+                </h3>
+                <h1
+                  data-aos="fade-right"
+                  data-aos-delay="2500"
+                  data-aos-once="true"
+                >
+                  Temukan pekerjaan freelance impianmu
+                </h1>
+                <p
+                  data-aos="fade-right"
+                  data-aos-delay="2700"
+                  data-aos-once="true"
+                >
+                  Bekerjalah ditempat yang membuatmu nyaman, Daftar gratis
+                  sekarang
+                </p>
+                <a
+                  class="tombol"
+                  href="#gettingstart"
+                  data-aos="fade-down"
+                  data-aos-delay="2800"
+                  data-aos-once="true"
+                  >GET STARTED</a
+                >
+              </div>
+              <div class="col-12 col-md-6 kanan text-center mt-md-4 mt-3">
+                <img
+                  src="assets/image/Group.png"
+                  width="224"
+                  height="484"
+                  alt="Freelancore"
+                  data-aos="fade-down"
+                  data-aos-delay="2500"
+                  data-aos-once="true"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bagianbody mt-md-5 mt-4">
+        <div class="container text-center">
+          <p>Best Class Ratings:</p>
+          <div class="row text-center">
+            <div class="col-12 col-md-3 text-center">
+              <img src="assets/image/rate/Google.png" />
+            </div>
+            <div class="col-12 col-md-3 text-center">
+              <img src="assets/image/rate/Facebook.png" />
+            </div>
+            <div class="col-12 col-md-3 text-center">
+              <img src="assets/image/rate/Trustpilot.png" />
+            </div>
+            <div class="col-12 col-md-3 text-center">
+              <img src="assets/image/rate/BBB.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bagianbody2 mt-md-5 mt-4">
+        <div class="container text-center">
+          <p class="p1">How It Works</p>
+          <p class="p2">
+            Temukan kenyamanan dalam lingkungan kerja dengan mendaftar secara
+            gratis sekarang. Bekerjalah di tempat yang memberikan rasa nyaman
+            dan kepuasan. Mulailah perjalanan karirmu menuju lingkungan kerja
+            yang mendukung pertumbuhan dan kesuksesanmu. Daftar sekarang untuk
+            meraih peluang-peluang menarik yang menanti di tempat kerja yang
+            sesuai dengan impianmu!
+          </p>
+          <div class="row text-center">
+            <div class="col-12 col-md-4 text-center">
+              <img src="assets/image/howitswork/work1.png" />
+              <br />
+              <div class="kotak">
+                <div class="dalemkotak">
+                  <h2>CREATE YOUR PROFILE</h2>
+                  <p>All you need is an email and a password to get started!</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 text-center">
+              <img src="assets/image/howitswork/work2.png" />
+              <br />
+              <div class="kotak">
+                <div class="dalemkotak">
+                  <h2>CONNECT YOUR BANK</h2>
+                  <p>
+                    Expedite the work application process and get your funds in
+                    a flash.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 text-center">
+              <img src="assets/image/howitswork/work3.png" />
+              <br />
+              <div class="kotak text-center">
+                <div class="dalemkotak">
+                  <h2>GET ACCOUNT APPROVED</h2>
+                  <p>
+                    Follow simple steps to finalize the process and get access
+                    to the funds you need.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="#gettingstart" class="tombol mt-md-4 mt-4">GET STARTED</a>
+        </div>
+      </div>
+      <div
+        class="bagianbody3 mt-md-5 mt-5 pt-4 pt-md-5 pb-md-5 pb-4"
+        id="about"
+      >
+        <div class="container text-left">
+          <div class="dalemnyakotak">
+            <p class="p1 mt-md-0 mt-2">ABOUT US</p>
+            <p class="p2">
+              When you least expect it, life happens and at one point or
+              another, we all need that extra push to make it to the end of the
+              month. That's what differentiates Freelancore. We offer QUICK,
+              SIMPLE and SAFE work that gets you the funds you need when you
+              need them most
+            </p>
+          </div>
+        </div>
+        <div class="container text-center">
+          <div class="row mt-md-5">
+            <div class="col-6 col-md-3 text-center mt-md-0 mb-md-0 mb-2 mt-2">
+              <img src="assets/image/about/about2.png" />
+            </div>
+            <div class="col-6 col-md-3 text-center mt-md-0 mb-md-0 mb-2 mt-2">
+              <img src="assets/image/about/about3.png" />
+            </div>
+            <div class="col-6 col-md-3 text-center mt-md-0 mb-md-0 mb-2 mt-2">
+              <img src="assets/image/about/about4.png" />
+            </div>
+          </div>
+          <p class="p1 mt-md-4 mt-3">
+            At Freelancore, we believe that everyone deserves access to fair and
+            affordable work - that includes you!
+          </p>
+          <a href="#gettingstart" class="tombol mt-md-4 mt-3">GET STARTED</a>
+        </div>
+      </div>
+      <div class="bagianbody4 pt-4 pb-4 pt-md-5 pb-md-5" id="review">
+        <div class="container text-left">
+          <div class="dalemnyakotak">
+            <p class="p1">REVIEWS</p>
+            <p class="p2">
+              Great customer service, quick response times and an easy interface
+              sets OneBlinc apart from the competition. Don’t just take it from
+              us. Take a look at what our customers have to say.
+            </p>
+          </div>
+        </div>
+        <div class="container text-center">
+          <div class="row mt-md-5">
+            <div class="col-12 col-md-4 text-center mt-md-0 mb-md-0 mb-2 mt-2">
+              <img class="reviews" src="assets/image/review/Review1.jpg" />
+            </div>
+            <div class="col-12 col-md-4 text-center mt-md-0 mb-md-0 mb-2 mt-2">
+              <img class="reviews" src="assets/image/review/Review2.jpg" />
+            </div>
+            <div class="col-12 col-md-4 text-center mt-md-0 mb-md-0 mb-2 mt-2">
+              <img class="reviews" src="assets/image/review/Review3.jpg" />
+            </div>
+          </div>
+          <div class="divbagianbody4">
+            <p class="p1 mt-md-4">Rated 4.9 out of 5 based on 701 reviews on</p>
+            <img src="assets/image/LogoTrustpilot.png" />
+          </div>
+          <a href="#gettingstart" class="tombol mt-md-4 mt-3">GET STARTED</a>
+        </div>
+        <div class="help"><i class="far fa-comment"></i> HELP</div>
+      </div>
+      <div class="sebelummasukkefooter mt-md-5 mt-3" id="gettingstart">
+        <div class="container">
+          <div class="text-center">
+            <p class="p1">Keep in Touch</p>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-4 text-left">
+              <p class="title1">Contact US</p>
+              <p class="subtitle">
+                0851-5796-9690<br />raihansidiq19@bgmail.com
+              </p>
+            </div>
+            <div class="col-12 col-md-4 text-center">
+              <p class="title2">Social Networking</p>
+              <p class="subtitle">
+                <a href="https://facebook.com/wafarifkianafin" target="_blank"
+                  ><i class="fab fa-facebook-square"></i
+                ></a>
+                <a href="https://instagram.com.com/wafarifki_" target="_blank"
+                  ><i class="fab fa-instagram-square"></i
+                ></a>
+                <a href="https://github.com/wafarifki" target="_blank"
+                  ><i class="fab fa-github-square"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/wafa-rifqi-anafin-553b591b7"
+                  target="_blank"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+              </p>
+            </div>
+            <div class="col-12 col-md-4 text-right">
+              <p class="title3">Get Updates</p>
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Email" />
+                <button class="btn btn-primary" type="button">
+                  <i class="fas fa-plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="footer mt-4 mt-md-5 pt-4 pb-4 pl-md-5 pt-md-5 pr-md-5 pb-md-0"
+      >
+        <div class="container text-center">
+          <a class="footer-nav" href="/">Home</a>
+          <a class="footer-nav" href="#about">About</a>
+          <a class="footer-nav" href="#review">Review</a>
+          <hr style="color: white" />
+
+          <a class="tombol mt-md-0 mt-4" href="#gettingstart">GET STARTED</a>
+          <hr class="batas mt-md-5 mt-4 mb-4 mb-md-5" />
+        </div>
+
+        <div class="container">
+          <div class="row mt-md-4">
+            <div class="col-12 col-md-6 text-left">
+              <p class="footext">
+                Freelancore approval may take longer if additional documents are
+                needed to evaluate applicants and requested projects. Same-day
+                funding option available to selected freelancore accounts and
+                delivery same business day options if approved by 3:00pm ET
+                Monday-Friday. *Projects facilitated by BlincFreelance, LLC,
+                subject to its project approval, terms, and conditions. Projects
+                made in selected states. Freelancers must be U.S. citizens or
+                permanent residents and live in a state where projects are
+                facilitated by BlincFreelance. Testimonials reflect individual
+                opinions and may not be illustrative of all individual
+                experiences with BlincFreelance. NMLS #1813996
+              </p>
+            </div>
+
+            <div class="col-12 col-md-6 align-self-center">
+              <div class="container text-center">
+                <a class="footer-nav" href="#">Compliance</a>
+                <a class="footer-nav" href="#">Terms</a>
+                <a class="footer-nav" href="#">Privacy</a>
+                <img
+                  src="assets/image/logoo.png"
+                  class="logofoot mt-md-0 mt-3"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr style="color: white" />
+        <p class="text-footer">Copyright &copy; 2023 -All right reserved</p>
+      </div>
+    </div>
+    <button class="keatas"><i class="fas fa-arrow-up"></i></button>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="assets/js/js.js"></script>
+  </body>
+</html>
